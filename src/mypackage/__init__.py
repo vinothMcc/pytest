@@ -1,4 +1,4 @@
 """mypackage: simple example package"""
-from .calculator import add
+from .calculator import add, divide
 
-__all__ = ["add"]
+__all__ = ["add", "divide"]

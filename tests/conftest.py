@@ -9,3 +9,10 @@ sys.path.insert(0, str(ROOT / "src"))
 @pytest.fixture
 def sample_values():
     return (2, 3)
+
+@pytest.fixture
+def db_conn():
+    print("Setup DB")
+    yield "db-connection"
+    print("Teardown DB")
+    
