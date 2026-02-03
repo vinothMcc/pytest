@@ -1,0 +1,11 @@
+[project]
+name = "sample-pytest-project"
+version = "0.1.0"
+description = "A minimal pytest example project"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
